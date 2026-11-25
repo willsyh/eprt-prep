@@ -1,0 +1,228 @@
+/* Tambahan 5 teks Reading × 10 soal = 50 soal. Teks, soal, dan pembahasan orisinal. */
+(function () {
+  const R = window.EPRT_DATA.reading;
+  const Q = (q, options, answer, explain) => ({ q, options, answer, explain });
+  const NOTE = "Teks dan soal orisinal untuk latihan (gaya soal EPrT).";
+
+  R.push(
+    {
+      title: "The Origins of Paper Money",
+      note: NOTE,
+      paragraphs: [
+        "For most of history, people traded goods directly or used objects that had value of their own, such as shells, salt, or metal coins. Coins were durable, but they were also heavy, and carrying large sums over long distances was both tiring and dangerous.",
+        "The first steps toward paper money were taken in China. During the Tang dynasty (618–907), merchants began depositing their coins with agents and receiving written certificates in return. These certificates were nicknamed \"flying money\" because they could travel easily from one city to another, where they could be exchanged for coins again.",
+        "By the early eleventh century, merchants in the province of Sichuan were issuing notes called jiaozi, and in 1023 the Song government took over the system and began printing official notes. For the first time, a government was issuing paper that people accepted as money in its own right.",
+        "Paper money, however, brought new problems. Because notes cost very little to produce, governments were tempted to print more of them whenever they needed funds. When too many notes circulated, each one bought less, and prices rose. Later Chinese dynasties experienced several periods in which paper money lost almost all of its value.",
+        "Europe adopted paper money much later. The first European banknotes were issued in 1661 by Stockholms Banco in Sweden. Today, most of the world's money no longer exists even as paper; it is simply a number recorded in a bank's computer. Its value, like that of the first Chinese notes, depends entirely on people's trust that others will accept it."
+      ],
+      questions: [
+        Q("What is the passage mainly about?",
+          ["The history of coins in ancient China", "Why Sweden issued the first European banknotes", "How paper money developed and the problems it created", "The dangers faced by merchants in the Tang dynasty"], 2,
+          "<b>Main idea</b>: teks menelusuri perkembangan uang kertas dari \"flying money\", jiaozi, masalah inflasi, hingga uang digital. Opsi lain hanya detail kecil."),
+        Q("The word \"durable\" in paragraph 1 is closest in meaning to ______.",
+          ["long-lasting", "valuable", "attractive", "convenient"], 0,
+          "<b>Vocabulary</b>: <i>durable</i> = awet, tahan lama → <b>long-lasting</b>. Kalimatnya kontras: awet <u>tetapi</u> berat."),
+        Q("The word \"they\" in paragraph 2 refers to ______.",
+          ["merchants", "agents", "coins", "certificates"], 3,
+          "<b>Reference</b>: \"These certificates were nicknamed 'flying money' because <u>they</u> could travel easily\" → yang mudah dibawa adalah <b>certificates</b>."),
+        Q("According to paragraph 2, why were the certificates called \"flying money\"?",
+          ["They were printed on very light paper.", "They could be moved easily between cities.", "They were carried by birds.", "They lost their value very quickly."], 1,
+          "<b>Detail</b>: \"…because they could travel easily from one city to another.\" Opsi C adalah jebakan makna harfiah."),
+        Q("According to the passage, when did a government first issue official paper notes?",
+          ["During the Tang dynasty", "In 1661", "In 1023, under the Song government", "Before metal coins were invented"], 2,
+          "<b>Detail</b>: ¶3 — \"in 1023 the Song government took over the system and began printing official notes.\" 1661 adalah tahun uang kertas pertama di Eropa (jebakan)."),
+        Q("The word \"tempted\" in paragraph 4 could best be replaced by ______.",
+          ["inclined", "forced", "forbidden", "advised"], 0,
+          "<b>Vocabulary</b>: <i>tempted</i> = tergoda, cenderung ingin melakukan → <b>inclined</b>. Tidak ada yang memaksa (<i>forced</i>) pemerintah."),
+        Q("It can be inferred from paragraph 4 that printing too many notes ______.",
+          ["makes paper money more valuable", "was forbidden by the Song government", "made coins disappear completely", "reduces what each note can buy"], 3,
+          "<b>Inference</b>: \"When too many notes circulated, each one bought less, and prices rose\" — inilah inflasi: daya beli tiap lembar uang turun."),
+        Q("All of the following are mentioned as early forms of value EXCEPT ______.",
+          ["shells", "cattle", "salt", "metal coins"], 1,
+          "<b>EXCEPT</b>: ¶1 hanya menyebut <i>shells, salt, or metal coins</i>. <b>Cattle</b> (ternak) tidak disebut dalam teks."),
+        Q("Where were the first European banknotes issued?",
+          ["In England", "In Italy", "In Sweden", "In the Netherlands"], 2,
+          "<b>Detail</b>: ¶5 — \"issued in 1661 by Stockholms Banco in <b>Sweden</b>.\""),
+        Q("Why does the author mention money \"recorded in a bank's computer\" in paragraph 5?",
+          ["To show that money still depends on trust, as it did in the past", "To argue that paper money should be banned", "To explain how banks prevent inflation", "To compare Swedish and Chinese banks"], 0,
+          "<b>Author's purpose</b>: kalimat terakhir menegaskan bahwa nilai uang digital, \"like that of the first Chinese notes\", bergantung pada kepercayaan. Penulis menghubungkan masa kini dengan masa lalu.")
+      ]
+    },
+
+    {
+      title: "Mangrove Forests",
+      note: NOTE,
+      paragraphs: [
+        "Along tropical coastlines, where rivers meet the sea, mangrove forests grow in conditions that would kill most trees. Their roots sit in salty water that rises and falls with the tides twice a day, and the mud they grow in contains very little oxygen.",
+        "Mangroves survive through remarkable adaptations. Some species filter salt out at their roots, while others absorb it and then release it through special glands on their leaves. Many species also have aerial roots that stick up out of the mud like pencils. These roots, called pneumatophores, allow the trees to take in oxygen directly from the air.",
+        "Mangrove forests provide important services to people. Their tangled roots slow down waves and hold sediment in place, protecting coastal villages from storms and erosion. After the 2004 Indian Ocean tsunami, several studies reported that areas behind healthy mangrove belts suffered less damage, although scientists still debate how much protection they can offer against very large waves. The roots also serve as nurseries where young fish, crabs, and shrimp hide from predators.",
+        "In addition, mangroves are highly effective at storing carbon. Because their waterlogged soil slows down decomposition, dead leaves and roots build up over centuries instead of rotting away. As a result, a hectare of mangrove forest can store several times more carbon than a hectare of many tropical forests on land.",
+        "Despite their value, mangroves have been cleared at an alarming rate to make room for shrimp farms, rice fields, and coastal development. Indonesia, which has more mangrove forest than any other country, has begun large-scale replanting programs. Yet replanting is not always successful: seedlings planted in the wrong place are often washed away or die within a few months."
+      ],
+      questions: [
+        Q("What is the main topic of the passage?",
+          ["The effects of the 2004 tsunami", "The adaptations, benefits, and threats of mangrove forests", "How shrimp farms are built along the coast", "Why tropical forests store less carbon"], 1,
+          "<b>Main topic</b>: teks membahas cara mangrove bertahan (¶1–2), manfaatnya (¶3–4), dan ancamannya (¶5)."),
+        Q("The word \"remarkable\" in paragraph 2 is closest in meaning to ______.",
+          ["ordinary", "recent", "dangerous", "extraordinary"], 3,
+          "<b>Vocabulary</b>: <i>remarkable</i> = luar biasa, patut diperhatikan → <b>extraordinary</b>. <i>Ordinary</i> justru lawan katanya."),
+        Q("According to paragraph 2, how do some mangrove species get rid of salt?",
+          ["By releasing it through glands on their leaves", "By storing it in their pneumatophores", "By growing only in fresh water", "By dropping their roots every year"], 0,
+          "<b>Detail</b>: \"others absorb it and then release it through special glands on their leaves.\""),
+        Q("The word \"they\" in the phrase \"how much protection they can offer\" (paragraph 3) refers to ______.",
+          ["scientists", "coastal villages", "mangrove belts", "very large waves"], 2,
+          "<b>Reference</b>: yang memberi perlindungan adalah <b>mangrove belts</b> (sabuk hutan mangrove), bukan ilmuwan atau desa."),
+        Q("What is the function of pneumatophores?",
+          ["To filter salt from the water", "To take in oxygen from the air", "To hold the tree above the tide", "To attract young fish"], 1,
+          "<b>Detail</b>: \"These roots, called pneumatophores, allow the trees to take in oxygen directly from the air.\""),
+        Q("What can be inferred from paragraph 3 about mangroves and tsunamis?",
+          ["Mangroves can stop any tsunami completely.", "Mangroves made the 2004 tsunami stronger.", "Scientists have never studied this topic.", "Experts do not fully agree on how much mangroves protect against huge waves."], 3,
+          "<b>Inference</b>: frasa \"scientists still <u>debate</u> how much protection they can offer against very large waves\" menunjukkan para ahli belum sepakat. Opsi A terlalu mutlak."),
+        Q("The word \"nurseries\" in paragraph 3 most likely refers to ______.",
+          ["places where young animals grow safely", "schools for coastal children", "farms that grow mangrove seedlings", "hospitals for injured fish"], 0,
+          "<b>Vocabulary in context</b>: akar mangrove adalah tempat \"young fish, crabs, and shrimp hide from predators\" → tempat hewan muda tumbuh dengan aman."),
+        Q("According to paragraph 4, why can mangrove soil store so much carbon?",
+          ["Mangroves grow faster than any other tree.", "The soil is full of oxygen.", "Waterlogged soil slows the decay of dead plant material.", "Mangroves are replanted every few years."], 2,
+          "<b>Detail</b>: \"Because their waterlogged soil slows down decomposition, dead leaves and roots build up over centuries.\" Opsi B bertentangan dengan ¶1 (lumpur miskin oksigen)."),
+        Q("All of the following are mentioned as reasons mangroves have been cleared EXCEPT ______.",
+          ["shrimp farms", "logging for paper", "rice fields", "coastal development"], 1,
+          "<b>EXCEPT</b>: ¶5 menyebut <i>shrimp farms, rice fields, and coastal development</i>. <b>Logging for paper</b> tidak disebut."),
+        Q("What would the paragraph following this passage most likely discuss?",
+          ["The history of the 2004 tsunami", "How mangroves filter salt", "The fishing industry in Europe", "How to choose suitable sites for replanting mangroves"], 3,
+          "<b>Next topic</b>: teks berakhir dengan masalah bibit yang ditanam \"in the wrong place\", sehingga kelanjutan logisnya adalah cara memilih lokasi penanaman yang tepat.")
+      ]
+    },
+
+    {
+      title: "Urban Heat Islands",
+      note: NOTE,
+      paragraphs: [
+        "On a hot summer afternoon, the center of a large city can be several degrees warmer than the countryside around it. This phenomenon, known as the urban heat island effect, was first described in the early nineteenth century by Luke Howard, an amateur scientist who recorded temperatures in and around London.",
+        "Several factors cause cities to trap heat. Dark surfaces such as asphalt roads and roofs absorb sunlight during the day and release it slowly at night. Tall buildings block the wind that would otherwise carry warm air away, and they reflect heat back and forth between their walls. In addition, cars, air conditioners, and factories all give off heat of their own.",
+        "Another factor is the lack of vegetation. In the countryside, plants release water through their leaves, a process that cools the surrounding air in much the same way that sweating cools the human body. In cities, where concrete has replaced fields and forests, this natural cooling largely disappears.",
+        "The consequences can be serious. Higher temperatures increase the demand for air conditioning, which raises energy use and, in turn, adds even more heat to the city. Heat waves are also more dangerous in urban areas, especially for elderly people and those without access to cooling.",
+        "Fortunately, cities can reduce the effect. Painting roofs white or other light colors reflects sunlight instead of absorbing it. Planting trees along streets provides shade and restores some of the cooling that plants naturally provide. Some cities have also created \"green roofs,\" covering the tops of buildings with soil and plants."
+      ],
+      questions: [
+        Q("What is the author's main purpose in the passage?",
+          ["To explain the causes, effects, and possible solutions of urban heat islands", "To describe the life of Luke Howard", "To persuade readers to move to the countryside", "To compare the weather in London and other cities"], 0,
+          "<b>Author's purpose</b>: ¶1 definisi, ¶2–3 penyebab, ¶4 dampak, ¶5 solusi. Teks bersifat menjelaskan (informatif)."),
+        Q("According to paragraph 1, who first described the urban heat island effect?",
+          ["A city planner in New York", "A group of modern climate scientists", "An amateur scientist in London", "An architect who designed green roofs"], 2,
+          "<b>Detail</b>: \"first described … by Luke Howard, an <b>amateur scientist</b> who recorded temperatures in and around London.\""),
+        Q("The word \"trap\" in paragraph 2 is closest in meaning to ______.",
+          ["remove", "hold in", "measure", "produce"], 1,
+          "<b>Vocabulary</b>: <i>trap heat</i> = memerangkap/menahan panas → <b>hold in</b>."),
+        Q("The word \"they\" in paragraph 2 refers to ______.",
+          ["dark surfaces", "asphalt roads", "warm air", "tall buildings"], 3,
+          "<b>Reference</b>: \"Tall buildings block the wind … and <u>they</u> reflect heat back and forth between their walls\" → <b>tall buildings</b>."),
+        Q("According to paragraph 2, why do dark surfaces keep cities warm at night?",
+          ["They absorb sunlight during the day and release it slowly.", "They produce heat from electricity.", "They block the wind at night.", "They prevent plants from growing."], 0,
+          "<b>Detail</b>: \"Dark surfaces … absorb sunlight during the day and release it slowly at night.\""),
+        Q("Why does the author mention \"sweating\" in paragraph 3?",
+          ["To show that city residents sweat more", "To warn about the dangers of heat waves", "To explain how plants cool the air", "To describe a disease caused by heat"], 2,
+          "<b>Rhetorical purpose</b>: penulis memakai perbandingan (analogi) dengan berkeringat untuk menjelaskan bagaimana tumbuhan mendinginkan udara lewat pelepasan air."),
+        Q("What can be inferred from paragraph 4 about air conditioning?",
+          ["It completely solves the heat island problem.", "It can make the heat island effect worse.", "It is not used in most large cities.", "It is safer for elderly people than shade."], 1,
+          "<b>Inference</b>: AC menaikkan pemakaian energi \"and, in turn, adds even more heat to the city\" — terjadi lingkaran setan yang memperparah efek pulau panas."),
+        Q("All of the following are mentioned as ways to reduce the heat island effect EXCEPT ______.",
+          ["painting roofs a light color", "planting trees along streets", "creating green roofs", "building taller buildings"], 3,
+          "<b>EXCEPT</b>: ¶5 menyebut atap berwarna terang, menanam pohon, dan green roof. Gedung tinggi justru disebut sebagai <u>penyebab</u> di ¶2."),
+        Q("The word \"restores\" in paragraph 5 could best be replaced by ______.",
+          ["reduces", "measures", "brings back", "replaces"], 2,
+          "<b>Vocabulary</b>: <i>restores</i> = mengembalikan → <b>brings back</b>. Pohon mengembalikan sebagian pendinginan alami yang hilang di kota (lihat ¶3)."),
+        Q("Where would the following sentence best fit?\n\"As a result, nights in the city often remain uncomfortably warm.\"",
+          ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 5"], 1,
+          "<b>Sentence insertion</b>: kalimat ini adalah akibat dari permukaan gelap yang \"release it slowly at night\" di ¶2. Kata <i>As a result</i> butuh sebab yang dibahas tepat sebelumnya.")
+      ]
+    },
+
+    {
+      title: "The Monarch Butterfly Migration",
+      note: NOTE,
+      paragraphs: [
+        "Every autumn, millions of monarch butterflies in eastern North America begin one of the most remarkable journeys in the insect world. Flying as far as 4,000 kilometers, they travel from Canada and the northern United States to a small area of mountain forests in central Mexico, where they spend the winter clustered together on fir trees.",
+        "What makes this migration especially puzzling is that no single butterfly ever completes the full round trip. The monarchs that fly south in autumn belong to a special generation that can live for up to eight months. In spring, they begin the journey north, but they lay eggs along the way and die. It takes three or four shorter-lived generations, each living only a few weeks as adults, to reach the northern breeding grounds again.",
+        "How, then, do the butterflies find their way to a place they have never seen? Scientists have discovered that monarchs use the position of the sun as a compass, correcting for its movement across the sky with an internal clock located partly in their antennae. Some evidence suggests that they may also sense Earth's magnetic field, which could help them navigate on cloudy days.",
+        "The number of monarchs reaching Mexico has dropped sharply since the 1990s. Researchers point to several causes: the loss of milkweed, the only plant on which monarch caterpillars can feed; the cutting of trees in the winter forests; and extreme weather linked to climate change.",
+        "To help, many people in the United States and Canada now plant milkweed in their gardens and along roadsides. These small patches act as \"waystations,\" giving migrating butterflies places to lay their eggs and feed during their long journey."
+      ],
+      questions: [
+        Q("What is the passage mainly about?",
+          ["How caterpillars turn into butterflies", "The climate of central Mexico", "Why gardeners prefer milkweed", "The monarch's migration, how it navigates, and the threats it faces"], 3,
+          "<b>Main idea</b>: teks membahas migrasi (¶1–2), cara navigasi (¶3), ancaman (¶4), dan upaya pelestarian (¶5)."),
+        Q("According to paragraph 1, where do monarchs spend the winter?",
+          ["In mountain forests in central Mexico", "In the northern United States", "Along the coast of Canada", "In gardens planted with milkweed"], 0,
+          "<b>Detail</b>: \"…to a small area of mountain forests in central Mexico, where they spend the winter.\""),
+        Q("The word \"puzzling\" in paragraph 2 is closest in meaning to ______.",
+          ["tiring", "dangerous", "mysterious", "beautiful"], 2,
+          "<b>Vocabulary</b>: <i>puzzling</i> = membingungkan, sulit dijelaskan → <b>mysterious</b>."),
+        Q("According to paragraph 2, why does no single monarch complete the round trip?",
+          ["The butterflies are eaten by birds in Mexico.", "The spring migrants lay eggs and die before reaching the north.", "The trip is too cold for butterflies.", "Butterflies lose their way in the spring."], 1,
+          "<b>Detail</b>: \"In spring, they begin the journey north, but they lay eggs along the way and die.\" Perjalanan diteruskan oleh generasi berikutnya."),
+        Q("What can be inferred about the generation that flies south in autumn?",
+          ["It lives much longer than the summer generations.", "It never lays any eggs.", "It is smaller than other generations.", "It is born in Mexico."], 0,
+          "<b>Inference</b>: generasi musim gugur hidup \"up to eight months\", sedangkan generasi lain hanya \"a few weeks as adults\", jadi umurnya jauh lebih panjang."),
+        Q("The word \"its\" in paragraph 3 refers to ______.",
+          ["the compass", "the antenna", "the internal clock", "the sun"], 3,
+          "<b>Reference</b>: \"use the position of the sun as a compass, correcting for <u>its</u> movement across the sky\" — yang bergerak melintasi langit adalah <b>the sun</b>."),
+        Q("According to paragraph 3, what might help monarchs navigate on cloudy days?",
+          ["Following other butterflies", "The smell of milkweed", "Sensing Earth's magnetic field", "Flying lower to the ground"], 2,
+          "<b>Detail</b>: \"they may also sense Earth's magnetic field, which could help them navigate on cloudy days.\""),
+        Q("The word \"sharply\" in paragraph 4 could best be replaced by ______.",
+          ["slightly", "dramatically", "slowly", "clearly"], 1,
+          "<b>Vocabulary</b>: <i>dropped sharply</i> = turun tajam/drastis → <b>dramatically</b>. <i>Slightly</i> adalah lawan katanya."),
+        Q("All of the following are mentioned as causes of the monarch decline EXCEPT ______.",
+          ["competition with other butterfly species", "the loss of milkweed", "the cutting of trees in winter forests", "extreme weather"], 0,
+          "<b>EXCEPT</b>: ¶4 menyebut hilangnya milkweed, penebangan pohon, dan cuaca ekstrem. Persaingan dengan spesies lain tidak disebut."),
+        Q("Why do people plant milkweed, according to paragraph 5?",
+          ["To decorate roadsides", "To stop the butterflies from migrating", "To keep caterpillars away from gardens", "To give migrating monarchs places to lay eggs and feed"], 3,
+          "<b>Detail</b>: patch milkweed menjadi \"waystations\" yang memberi \"places to lay their eggs and feed\". Ingat ¶4: ulat monarch hanya makan milkweed.")
+      ]
+    },
+
+    {
+      title: "Bamboo: An Old Material with a New Future",
+      note: NOTE,
+      paragraphs: [
+        "Bamboo is often mistaken for a tree, but it is actually a type of grass. Some species are among the fastest-growing plants on Earth, able to grow nearly a meter in a single day under ideal conditions. Unlike trees, which can take decades to mature, bamboo can be harvested for building after just three to five years.",
+        "For thousands of years, people across Asia, Africa, and Latin America have used bamboo to build houses, bridges, and scaffolding. Its popularity comes from an unusual combination of properties. Bamboo is light, yet it is remarkably strong when pulled or stretched. Its hollow stems are also flexible, allowing bamboo structures to bend rather than break during earthquakes and strong winds.",
+        "Despite these advantages, bamboo has long been seen as \"the poor man's timber.\" It also has natural weaknesses: untreated stems are attacked by insects and fungi and may last only a few years, especially when they are exposed to rain. In many places, families replaced their bamboo homes with concrete ones as soon as they could afford to.",
+        "In recent decades, however, architects have begun to view bamboo differently. Modern treatment methods, such as soaking the stems in a solution of boron salts, protect them from insects and decay and can extend their life to several decades. Designers in Indonesia, Colombia, and elsewhere have used treated bamboo to create schools, homes, and public buildings that attract visitors from around the world.",
+        "Bamboo also appeals to people concerned about the environment. Because it grows quickly and regrows from its roots after it is cut, it can be harvested again and again without replanting. In addition, its dense root system helps hold soil in place on hillsides, reducing erosion."
+      ],
+      questions: [
+        Q("Which of the following best states the main idea of the passage?",
+          ["Bamboo should replace concrete in all buildings.", "Bamboo grows faster than any tree.", "Bamboo is a strong, eco-friendly building material that is gaining new respect.", "Bamboo houses are only found in Asia."], 2,
+          "<b>Main idea</b>: teks menjelaskan kelebihan bambu, citra lamanya sebagai bahan murah, lalu bagaimana arsitek kini menghargainya. Opsi A terlalu berlebihan (\"all buildings\")."),
+        Q("According to paragraph 1, bamboo is actually a kind of ______.",
+          ["tree", "grass", "fungus", "vine"], 1,
+          "<b>Detail</b>: \"Bamboo is often mistaken for a tree, but it is actually a type of <b>grass</b>.\""),
+        Q("The word \"mature\" in paragraph 1 is closest in meaning to ______.",
+          ["become fully grown", "become old and weak", "produce flowers", "be cut down"], 0,
+          "<b>Vocabulary</b>: <i>mature</i> (verb) = menjadi dewasa/matang → <b>become fully grown</b>."),
+        Q("The word \"Its\" in \"Its popularity\" (paragraph 2) refers to ______.",
+          ["Asia's", "a house's", "a bridge's", "bamboo's"], 3,
+          "<b>Reference</b>: paragraf 2 membahas bambu sebagai bahan bangunan, jadi \"<u>Its</u> popularity\" = popularitas <b>bambu</b>."),
+        Q("According to paragraph 2, why can bamboo structures survive earthquakes?",
+          ["They are built very low to the ground.", "They are covered with concrete.", "Their flexible stems bend instead of breaking.", "They are treated with boron salts."], 2,
+          "<b>Detail</b>: \"Its hollow stems are also flexible, allowing bamboo structures to bend rather than break during earthquakes.\""),
+        Q("The phrase \"the poor man's timber\" in paragraph 3 suggests that bamboo was ______.",
+          ["seen as a cheap, low-status material", "too expensive for most families", "used only by carpenters", "stronger than most types of wood"], 0,
+          "<b>Phrase meaning</b>: \"kayu orang miskin\" menunjukkan bambu dianggap bahan murah dan berstatus rendah. Ini didukung kalimat bahwa keluarga menggantinya dengan beton begitu mampu."),
+        Q("According to paragraph 4, what does soaking bamboo in boron salts do?",
+          ["It makes bamboo grow faster.", "It protects bamboo from insects and decay.", "It changes the color of the bamboo.", "It makes bamboo heavier and stronger."], 1,
+          "<b>Detail</b>: \"…protect them from insects and decay and can extend their life to several decades.\""),
+        Q("What can be inferred from paragraph 3 about families who replaced bamboo homes with concrete?",
+          ["They preferred the look of bamboo.", "They were required to do so by law.", "They could no longer find bamboo.", "They saw concrete as more durable and more respectable."], 3,
+          "<b>Inference</b>: bambu tanpa perawatan cepat rusak dan dianggap \"poor man's timber\", jadi beton dipandang lebih awet dan bergengsi. Itulah sebabnya keluarga beralih \"as soon as they could afford to\"."),
+        Q("All of the following are mentioned as environmental benefits of bamboo EXCEPT ______.",
+          ["it grows quickly", "it regrows from its roots after cutting", "it needs no water to grow", "it helps reduce soil erosion"], 2,
+          "<b>EXCEPT</b>: ¶5 menyebut tumbuh cepat, tumbuh kembali dari akar, dan menahan tanah. Tidak ada pernyataan bahwa bambu tidak butuh air."),
+        Q("What is the author's attitude toward bamboo as a building material?",
+          ["Critical", "Approving", "Indifferent", "Fearful"], 1,
+          "<b>Tone</b>: penulis menonjolkan kekuatan, kelenturan, cara mengatasi kelemahannya, dan manfaat lingkungan bambu. Sikapnya positif dan mendukung (<b>approving</b>), meskipun tetap menyebut kelemahannya.")
+      ]
+    }
+  );
+})();
