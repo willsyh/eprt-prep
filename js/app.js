@@ -319,7 +319,18 @@
 
   /* Simulasi mengikuti format tes: Listening 50, Structure 40 (15 + 25), Reading 50. */
   function startSimulation() {
-    const L = listeningItems().slice(0, SIM_COUNT.listening);
+    // Listening: 30 short dialogue acak, lalu long dialogue & monolog utuh (acak) sampai 50 soal.
+    const all = listeningItems(), byCtx = (prefix) => {
+      const groups = {};
+      all.filter((it) => it.ctx.id.startsWith(prefix)).forEach((it) => (groups[it.ctx.id] = groups[it.ctx.id] || []).push(it));
+      return shuffle(Object.values(groups));
+    };
+    const L = shuffle(all.filter((it) => it.ctx.id.startsWith("s"))).slice(0, 30);
+    for (const g of [...byCtx("l").slice(0, 2), ...byCtx("t")]) {
+      if (L.length >= SIM_COUNT.listening) break;
+      L.push(...g.slice(0, SIM_COUNT.listening - L.length));
+    }
+    if (L.length < SIM_COUNT.listening) for (const g of byCtx("l").slice(2)) L.push(...g.slice(0, SIM_COUNT.listening - L.length));
     const G = [...shuffle(grammarItems("structure")).slice(0, 15), ...shuffle(grammarItems("error")).slice(0, SIM_COUNT.grammar - 15)];
     const R = [];
     for (const pi of shuffle(D.reading.map((_, i) => i))) {
